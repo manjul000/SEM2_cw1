@@ -58,17 +58,12 @@ if (!empty($_SESSION["Username"])) {
                 <br>
                 <p>
                     ' . $Rows[2] . '
-                </p>';
-                if ($Username == null) {
-                    echo '';
-                } else {
-                    echo '<form action="booking_db.php" method="POST">
-                <input type="text" id="ProductID" name="BookingID" value="1" hidden>
+                </p>
                 <a href="booking_db.php"><button type="button" class="book-btn">Book visit</button></a>
-                </form>
                 </div>';
-                };
-            } ?>
+            };
+            ?>
+
             <?php
             $conn = mysqli_connect("localhost", "root", "", "cw1_test");
             $sql = "SELECT * FROM `bookings` WHERE Booking_ID=2";
@@ -83,16 +78,12 @@ if (!empty($_SESSION["Username"])) {
                 <br>
                 <p>
                     ' . $Rows[2] . '
-                </p>';
-                if ($Username == null) {
-                    echo '';
-                } else {
-                    echo '<form action="booking_db.php" method="POST">
-                <input type="text" id="ProductID" name="BookingID" value="<?php echo $BookingID; ?>" disabled hidden>
-                <a href="booking_db.php"><button type="button" class="book-btn">Book visit</button></a></form>
+                </p>
+                <a href="booking_db.php"><button type="button" class="book-btn">Book visit</button></a>
                 </div>';
                 };
-            } ?>
+            ?>
+
 
             <?php
             $conn = mysqli_connect("localhost", "root", "", "cw1_test");
@@ -108,16 +99,11 @@ if (!empty($_SESSION["Username"])) {
                 <br>
                 <p>
                     ' . $Rows[2] . '
-                </p>';
-                if ($Username == null) {
-                    echo '';
-                } else {
-                    echo '<form action="booking_db.php" method="POST">
-                <input type="text" id="ProductID" name="BookingID" value="<?php echo $BookingID; ?>" disabled hidden>
-                <a href="booking_db.php"><button type="button" class="book-btn">Book visit</button></a></form>
+                </p>
+                <a href="booking_db.php"><button type="button" class="book-btn">Book visit</button></a>
                 </div>';
                 };
-            } ?>
+             ?>
             <?php
             $conn = mysqli_connect("localhost", "root", "", "cw1_test");
             $sql = "SELECT * FROM `bookings` WHERE Booking_ID=4";
@@ -132,16 +118,11 @@ if (!empty($_SESSION["Username"])) {
                 <br>
                 <p>
                     ' . $Rows[2] . '
-                </p>';
-                if ($Username == null) {
-                    echo '';
-                } else {
-                    echo '<form action="booking_db.php" method="POST">
-                <input type="text" id="ProductID" name="BookingID" value="<?php echo $BookingID; ?>" disabled hidden>
-                <a href="booking_db.php"><button type="button" class="book-btn">Book visit</button></a></form>
+                </p>
+                <a href="booking_db.php"><button type="button" class="book-btn">Book visit</button></a>
                 </div>';
                 };
-            } ?>
+            ?>
 
             <?php
             $conn = mysqli_connect("localhost", "root", "", "cw1_test");
@@ -157,16 +138,11 @@ if (!empty($_SESSION["Username"])) {
                 <br>
                 <p>
                     ' . $Rows[2] . '
-                </p>';
-                if ($Username == null) {
-                    echo '';
-                } else {
-                    echo '<form action="booking_db.php" method="POST">
-                <input type="text" id="ProductID" name="BookingID" value="<?php echo $BookingID; ?>" disabled hidden>
-                <a href="booking_db.php"><button type="button" class="book-btn">Book visit</button></a></form>
+                </p>
+                <a href="booking_db.php"><button type="button" class="book-btn">Book visit</button></a>
                 </div>';
                 };
-            } ?>
+            ?>
             <?php
             $conn = mysqli_connect("localhost", "root", "", "cw1_test");
             $sql = "SELECT * FROM `bookings` WHERE Booking_ID=6";
@@ -181,16 +157,11 @@ if (!empty($_SESSION["Username"])) {
                 <br>
                 <p>
                     ' . $Rows[2] . '
-                </p>';
-                if ($Username == null) {
-                    echo '';
-                } else {
-                    echo '<form action="booking_db.php" method="POST">
-                <input type="text" id="ProductID" name="BookingID" value="<?php echo $BookingID; ?>" disabled hidden>
+                </p>
                 <a href="booking_db.php"><button type="button" class="book-btn">Book visit</button></a></form>
                 </div>';
                 };
-            } ?>
+            ?>
 
 
         </div>
